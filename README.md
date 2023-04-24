@@ -26,8 +26,7 @@ pip install telegram
 
 ## 3. Telegram Channel ID 확인 
 ### 1) 채널 만들기
-#### - 채널 생성 -> bot 추가 -> 관리자로 승격 
-#### - (보안 공지 알람방에 관리자만 메세지 보내도록 하기 위함)
+#### - 채널 생성 -> bot 추가 -> 관리자로 승격 (보안 공지 알람방에 관리자만 메세지 보내도록 하기 위함)
 #### - bot 추가 후 채널 내 메세지 발생
 ![Send_Message](https://user-images.githubusercontent.com/95232424/234063960-18f5a1af-c13c-4543-b013-8df7fa479f9c.jpg)
 

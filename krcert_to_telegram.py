@@ -5,8 +5,6 @@ import json
 from datetime import datetime, date, time, timedelta
 import os
 
-#bot1 = telegram.Bot(token='[your token]')
-
 #bot = telegram.Bot(token='[your token]')
 bot1 = telegram.Bot(token='[your token]')
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -14,6 +12,7 @@ rss1 = feedparser.parse("https://knvd.krcert.or.kr/rss/securityNotice.do") #보�
 rss4 = feedparser.parse("https://knvd.krcert.or.kr/rss/patchInfo.do") #취약점패치
 load = rss1.entries
 load2 = rss4.entries
+
 # 보안공지 
 pj = json.dumps(load,indent=2, ensure_ascii=False)
 jp = json.loads(pj)
@@ -28,6 +27,7 @@ print(kst_hour)
 save_link=str(link)+"\n"
 save_link_str=str(link)
 send="제목 : "+title+"\n"+"시각 : "+str(kst_hour)+"\n"+"링크 : "+link
+
 #취약점패치
 pj2 = json.dumps(load2,indent=2, ensure_ascii=False)
 jp2 = json.loads(pj2)

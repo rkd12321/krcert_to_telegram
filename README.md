@@ -1,11 +1,11 @@
 # krcert_to_telegram   
 ## 1. 사전 설치 파일   
-
-```
+```python
 pip install feedparser   
 pip install python-telegram-bot   
 pip install telegram   
 ```
+
 ## 2. Telegram Bot Token 확인
 ### 1) 텔레그램 실행
 ### 2) Botfather 추가 및 Bot Token 발급
@@ -15,18 +15,14 @@ pip install telegram
 #### - botfather 검색 및 추가
 ![Search_botfather_02](https://user-images.githubusercontent.com/95232424/234058373-3dfb6c7b-eb30-4dfe-8493-5b99bf4ad7f3.jpg)
 
-
-
-#### - Bot Token 발급
+#### - Bot Token 발급 및 이름 정하기 (bot 이름 끝에는 무조건 "\_bot"이 붙음 ex) rkd -> rkd_bot)
 ```
 /newbot
 ```
 ![Start_bot_01](https://user-images.githubusercontent.com/95232424/234059705-3c31e2ae-fd5b-42e8-bb98-96f83face695.jpg)
 
-
 #### - Bot Token 확인
 ![Bot_Token_ID](https://user-images.githubusercontent.com/95232424/234057346-837f3307-fdec-45ca-8e45-6a45d9e5c0ef.jpg)
-
 
 ## 3. Telegram Channel ID 확인 
 ### 1) 채널 만들기
@@ -37,17 +33,15 @@ pip install telegram
 
 
 #### - 메세지 발생 후 아래의 url로 채널 id확인
-```
+```html
 https://api.telegram.org/bot[BOT_TOKEN]/getUpdates
 ```
-
 
 #### - 결과 값 확인
 ```json
 {"ok":true,"result":[{"update_id":123456789,
 "channel_post":{"message_id":900,"author_signature":"rkd","sender_chat":{"id":-1234567890123,"title":"Rkd-test","type":"channel"},"chat":{"id":-1234567890123,"title":"Rkd-test","type":"channel"},"date":1682354709,"text":"."}}]}
 ```
-
 
 #### - 결과 값 내 "id" 값 확인 ex) "-1234567890123"
 ```json

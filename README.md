@@ -1,4 +1,6 @@
-# krcert_to_telegram   
+# krcert_to_telegram
+KISA에서 업데이트하는 보안공지 및 취약점 정보를 실시간으로 확인하기
+
 ## 1. 사전 설치 파일   
 ```python
 pip install feedparser   

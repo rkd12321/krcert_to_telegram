@@ -47,3 +47,15 @@ https://api.telegram.org/bot[BOT_TOKEN]/getUpdates
 "sender_chat":{"id":-1234567890123,"title":"Rkd-test","type":"channel"}
 ```
 
+## 4. krcert_to_telegram.py 수정
+```python
+bot1 = telegram.Bot(token='[your token]') ## 9번째 행 / [your token]을 위에서 발급 받은 bot token으로 변경 
+bot1.sendMessage([your MessageId], send) ## 57번째 행 / [your MessageId]을 위에서 확인한 채널 id로 변경
+bot1.sendMessage([your MessageId], send2) ## 70번째 행 / [your MessageId]을 위에서 확인한 채널 id로 변경
+```
+
+## 5. CronTab 등록 
+
+```sh
+* * * * * /[your python file path]
+```
